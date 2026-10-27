@@ -1,0 +1,23 @@
+# Build artifacts
+**/bin/
+**/dist/
+*.exe
+**/coverage.out
+
+# Local databases (they are re-created by the programs/tests)
+**/*.db
+**/*.db-journal
+**/*.db-shm
+**/*.db-wal
+
+# Local environment
+**/.env
+!**/.env.example
+
+# Logs (except the recorded terminal sessions that belong to the report)
+*.log
+!pr*/.hidden/logs/*.log
+
+# Stray binaries built in module roots (files only, never cmd/ directories)
+/pr*/server
+/pr*/myapp
